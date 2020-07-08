@@ -1,0 +1,7 @@
+.column {
+  width: 50vw;
+}
+.row{
+  width: 50vw;
+  display: table;
+}

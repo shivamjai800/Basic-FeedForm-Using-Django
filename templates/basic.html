@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Html</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script>
+  function validateForm() {
+    var Name = document.forms["MyForm"]["name"].value;
+    if (Name == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+</script>
+
+</head>
+<body>
+  <h1 style="margin-top: 5vh; margin-left:10vw;color: lightgrey;">Enter Your details</h1>
+  <div style=" display:block;margin-left: 15vw; margin-top: 10vh;" style="width: max-content; height: max-content; ">
+	<form name="MyForm" action="/submission" method="get" onsubmit="return validateForm()">
+  <div class="form-group col-md-6 input-group .flex-nowrap">
+    <label for="inputName">Name</label>
+    <input name="name" id="inputName" type="text" class="form-control" placeholder="Your Name" aria-label="Name" aria-describedby="addon-wrapping">
+  </div>
+  <div class="form-group col-md-6 input-group .flex-nowrap">
+    <label for="inputEmail">Email</label>
+    <input name="email" id="inputEmail" type="email" class="form-control" placeholder="Your Email" aria-label="YourEmail" aria-describedby="addon-wrapping">
+  </div>
+  <div class="form-group col-md-6 input-group .flex-nowrap">
+    <label for="Username">Username</label>
+    <input name="username" id="Username" type="text" class="form-control" placeholder="Username" aria-label="YourEmail" aria-describedby="addon-wrapping">
+  </div>
+  <div class="form-group col-md-6 input-group .flex-nowrap">
+    <label for="Password">Password</label>
+    <input name="text" id="Password" type="password" class="form-control" placeholder="Password" aria-label="YourEmail" aria-describedby="addon-wrapping">
+  </div>
+    <div name="gender" class="radio">
+      <label class="radio-inline"><input type="radio" name="optradio">Male</label>
+      <label class="radio-inline"><input type="radio" name="optradio">Female</label>
+      <label class="radio-inline"><input type="radio" name="optradio">Others</label>
+    </div>
+  <div class="form-group col-md-6 input-group ">
+    <label for="birthday">DOB</label>
+    <input name="DOB" class ="form-control" type="date" id="birthday" name="birthday" placeholder="DD/MM/YY">
+  </div>
+  <div class="form-group col-md-6 input-group">
+    <label for="feedback">Feedback</label>
+    <textarea  name="feedback" class ="form-control" style="margin: 0px; height: 119px; width: 577px;" id="feedback"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script type="text/javascript" src="basic.js">
+  
+</script>
+</body>
+</html>
